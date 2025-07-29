@@ -1,7 +1,56 @@
-deployment:
-  tasks:
-    - export NODE_ENV=production
-    - /opt/cpanel/ea-nodejs16/bin/npm install
-    - /opt/cpanel/ea-nodejs16/bin/npm run build
-    - rm -rf public_html/*
-    - cp -r build/* public_html/
+name: 🚀 Deploy Node.js App to cPanel via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    name: Upload files to cPanel
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 2
+
+    - name: 🔍 Check for changes
+      id: changes
+      run: |
+        echo "Checking for file changes..."
+        if [ -n "$(git diff --name-only HEAD^ HEAD)" ]; then
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: 📝 Show changes
+      if: steps.changes.outputs.has_changes == 'true'
+      run: git diff --name-only HEAD^ HEAD
+
+    - name: 📦 Install Dependencies and Build
+      if: steps.changes.outputs.has_changes == 'true'
+      working-directory: client
+      run: |
+        npm install
+        npm run build
+
+    - name: 🚀 FTP Deploy
+      if: steps.changes.outputs.has_changes == 'true'
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftp
+        port: 21
+        local-dir: ./
+        server-dir: /nsglobaltech.com/
+        dangerous-clean-slate: false
+        exclude: |
+          **/node_modules/**
+          **/.git/**
+          **/.github/**
+          **/.github/workflows/**
+          **/.env*
+          **/*.md
