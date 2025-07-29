@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/8b133f71-45b5-4978-8e75-51e3af5bfc09.png" 
+                src="/images/vidyaniketan-school-logo.png" 
                 alt="Vidyaniketan Logo" 
                 className="h-10 w-auto"
               />
