@@ -45,7 +45,7 @@ jobs:
         protocol: ftp
         port: 21
         local-dir: ./
-        server-dir: /nsglobaltech.com/
+        server-dir: /vidyaniketanschoolparli.com/
         dangerous-clean-slate: false
         exclude: |
           **/node_modules/**
