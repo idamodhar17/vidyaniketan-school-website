@@ -36,7 +36,7 @@ const About = () => {
       <section className="bg-gradient-to-r from-deep-blue to-navy-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="color-[#3e2d1e] text-3xl md:text-3xl font-bold mb-3">ABOUT VIDYANIKETAN</h1>
+            <h1 className="color-[#3e2d1e] text-3xl md:text-3xl text-deep-blue font-bold mb-3">ABOUT VIDYANIKETAN</h1>
             <p className="text-xl md:text-2xl text-light-blue">
               सर्वे भवन्तु शिक्षिता: - Let Everyone Become Educated
             </p>
@@ -69,7 +69,7 @@ const About = () => {
             </div>
             <div className="flex justify-center">
               <img
-                src="/lovable-uploads/8b133f71-45b5-4978-8e75-51e3af5bfc09.png"
+                src="/images/vidyaniketan-school-logo.png"
                 alt="Vidyaniketan Logo"
                 className="max-w-md w-full h-auto"
               />

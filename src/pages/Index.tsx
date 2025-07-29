@@ -73,7 +73,7 @@ const Index = () => {
             </div>
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/8b133f71-45b5-4978-8e75-51e3af5bfc09.png" 
+                src="/images/vidyaniketan-school-logo.png" 
                 alt="Vidyaniketan School" 
                 className="max-w-md w-full h-auto drop-shadow-2xl"
               />
