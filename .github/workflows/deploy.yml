@@ -30,7 +30,7 @@ jobs:
 
     - name: 📦 Install Dependencies and Build
       if: steps.changes.outputs.has_changes == 'true'
-      working-directory: /*
+      working-directory: .
       run: |
         npm install
         npm run build
