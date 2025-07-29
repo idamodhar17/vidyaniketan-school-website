@@ -17,13 +17,12 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-lg font-bold">VIDYANIKETAN</h3>
-                <p className="text-sm text-light-blue">Primary School</p>
+                <p className="text-sm text-light-blue">सर्वे भवन्तु शिक्षिता:</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 mb-4">
               Nurturing young minds with joy, creativity, and values. A safe space where every child learns and grows.
             </p>
-            <p className="text-burnt-orange text-sm font-semibold">सर्वे भवन्तु शिक्षिता:</p>
           </div>
 
           {/* Quick Links */}

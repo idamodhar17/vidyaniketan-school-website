@@ -16,7 +16,6 @@ const Header = () => {
     { name: "Events", href: "/events" },
     { name: "Faculty", href: "/faculty" },
     { name: "Admissions", href: "/admissions" },
-    { name: "Testimonials", href: "/testimonials" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
@@ -31,7 +30,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>+91 98765 43210</span>
+              <span className="text-xs">+91 98765 43210</span>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-4 w-4" />

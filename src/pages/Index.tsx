@@ -48,8 +48,8 @@ const Index = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
-              <h1 className="text-xl md:text-6xl font-bold mb-6">
-                Welcome to <span className="text-burnt-orange text-4xl"><br />VIDYANIKETAN</span>
+              <h1 className="text-2xl md:text-xl font-bold mb-2">
+                Welcome to <span className="font-caprasimo text-burnt-orange text-4xl"><br />VIDYANIKETAN</span>
               </h1>
               <p className="text-xl md:text-2xl mb-4 text-navy-blue">
                 सर्वे भवन्तु शिक्षिता:
@@ -64,7 +64,7 @@ const Index = () => {
                     Admissions Open <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-deep-blue">
+                <Button asChild variant="outline" size="lg" className="border-white text-black hover:bg-white hover:text-deep-blue">
                   <Link to="/contact">
                     Book a Visit
                   </Link>
@@ -91,9 +91,11 @@ const Index = () => {
             </span>
             <div className="flex-1 overflow-hidden">
               <div className="animate-pulse">
+                <marquee direction="left">
                 <span className="text-sm">
                   🎉 Admissions open for 2025-26 | Yoga Day Celebration on Jun 21st | Parent-Teacher meeting on Jun 26th
                 </span>
+                </marquee>
               </div>
             </div>
           </div>

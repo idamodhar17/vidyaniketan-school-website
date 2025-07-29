@@ -61,7 +61,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+			},
+			fontFamily: {
+					cinzel: ['"Cinzel"', 'serif'],
+					caprasimo: ['"Caprasimo"', 'cursive'],
+					neuton: ['"Neuton"', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

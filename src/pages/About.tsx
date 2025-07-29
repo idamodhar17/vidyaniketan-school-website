@@ -31,7 +31,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-[#F2EBE2 ]">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-deep-blue to-navy-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,32 +51,26 @@ const About = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-navy-blue mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Established in 2010, Vidyaniketan Primary School was born from a vision to create a nurturing 
-                educational environment where young minds could flourish. Our founders, experienced educators 
-                themselves, recognized the need for a school that combines academic excellence with emotional 
-                and social development.
+                Established in 2025, Vidyaniketan Primary School marks the beginning of a new chapter in quality education for the young minds of our community. Born out of a vision to nurture holistic growth, our school is founded by passionate educators who believe that learning should go beyond textbooks.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Over the years, we have grown into a trusted institution serving families in our community, 
-                with hundreds of successful alumni who have gone on to excel in their further education. 
-                Our CBSE-affiliated curriculum ensures that students receive quality education that prepares 
-                them for the challenges ahead.
+                Though newly launched, Vidyaniketan is built on strong values, a forward-thinking approach, and a commitment to academic excellence. With a CBSE-aligned curriculum and a focus on emotional and social development, we are dedicated to shaping confident, curious, and compassionate learners—ready to thrive in tomorrow's world.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-bright-red">500+</div>
+                  <div className="text-3xl font-bold text-bright-red">100+</div>
                   <div className="text-sm text-gray-600">Happy Students</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-bright-red">25+</div>
+                  <div className="text-3xl font-bold text-bright-red">15+</div>
                   <div className="text-sm text-gray-600">Qualified Teachers</div>
                 </div>
               </div>
             </div>
             <div className="flex justify-center">
-              <img 
-                src="/lovable-uploads/8b133f71-45b5-4978-8e75-51e3af5bfc09.png" 
-                alt="Vidyaniketan Logo" 
+              <img
+                src="/lovable-uploads/8b133f71-45b5-4978-8e75-51e3af5bfc09.png"
+                alt="Vidyaniketan Logo"
                 className="max-w-md w-full h-auto"
               />
             </div>
@@ -92,8 +86,8 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-navy-blue mb-4">Our Vision</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To be a beacon of educational excellence that nurtures confident, creative, and 
-                  compassionate young learners who are prepared to make positive contributions to 
+                  To be a beacon of educational excellence that nurtures confident, creative, and
+                  compassionate young learners who are prepared to make positive contributions to
                   society while maintaining their cultural roots and values.
                 </p>
               </CardContent>
@@ -102,8 +96,8 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-navy-blue mb-4">Our Mission</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To provide a safe, inclusive, and stimulating learning environment where every 
-                  child's potential is recognized and nurtured through innovative teaching methods, 
+                  To provide a safe, inclusive, and stimulating learning environment where every
+                  child's potential is recognized and nurtured through innovative teaching methods,
                   character development, and a commitment to academic excellence.
                 </p>
               </CardContent>
@@ -112,37 +106,38 @@ const About = () => {
         </div>
       </section>
 
-      {/* Principal's Message */}
-      <section className="py-16">
+      {/* Chairman's Message */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-            <div className="lg:col-span-1">
-              <div className="bg-light-blue rounded-lg p-8 text-center">
-                <div className="w-32 h-32 bg-deep-blue rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-16 w-16 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-navy-blue">Mrs. Sunita Rao</h3>
-                <p className="text-gray-600">Principal</p>
-                <p className="text-sm text-gray-600 mt-2">M.Ed., B.Ed.<br/>15+ Years Experience</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Photo Section */}
+            <div className="flex justify-center">
+              <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-deep-blue shadow-lg">
+                <img
+                  src="/images/chairman.jpg" // Replace with actual path
+                  alt="Chairman - Mr. Sachin Sarda"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
-            <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold text-navy-blue mb-6">Message from Our Principal</h2>
-              <div className="text-lg text-gray-700 leading-relaxed space-y-4">
+
+            {/* Message Card */}
+            <div className="bg-light-blue p-8 rounded-2xl shadow-xl relative">
+              <div className="absolute top-0 left-0 w-2 h-full bg-deep-blue rounded-l-2xl"></div>
+              <h2 className="text-3xl font-bold text-navy-blue mb-4">Message from Our Chairman</h2>
+              <div className="text-lg text-gray-700 leading-relaxed space-y-5 italic">
                 <p>
-                  "Dear Parents and Students, welcome to the Vidyaniketan family! As an educator with over 
-                  15 years of experience, I have witnessed the incredible potential that lies within every 
-                  child. Our role is not just to teach subjects, but to ignite curiosity, build confidence, 
-                  and nurture the whole child."
+                  “At Vidyaniketan Primary School, we believe that the foundation of a strong society lies
+                  in the education we provide to our children today. With this belief, we have laid the cornerstone
+                  of a school that not only imparts knowledge but also cultivates values, creativity, and a lifelong love for learning.”
                 </p>
                 <p>
-                  "At Vidyaniketan, we believe that the early years of education are the most crucial in 
-                  shaping a child's future. Our dedicated team of teachers works tirelessly to create an 
-                  environment where learning is joyful, meaningful, and relevant to each child's life."
+                  “Though we are just beginning, our focus is on building a nurturing environment where
+                  children grow intellectually, emotionally, and socially to become the leaders of tomorrow.”
                 </p>
-                <p>
-                  "We invite you to join us in this beautiful journey of discovery, growth, and learning. 
-                  Together, we can help your child build the strong foundations they need for a bright future."
+                <p className="not-italic text-right text-navy-blue font-semibold mt-4">
+                  — Mr. Sachin Sarda<br />
+                  <span className="text-sm font-normal text-gray-600">Chairman, Vidyaniketan School</span>
                 </p>
               </div>
             </div>
@@ -150,19 +145,64 @@ const About = () => {
         </div>
       </section>
 
+
+      {/* Principal's Message */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            {/* Message Card */}
+            <div className="bg-light-blue p-8 rounded-2xl shadow-xl relative">
+              {/* Top Border Accent */}
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-deep-blue to-navy-blue rounded-t-2xl"></div>
+              <h2 className="text-3xl font-bold text-navy-blue mb-4">Message from Our Principal</h2>
+              <div className="text-lg text-gray-700 leading-relaxed space-y-5 italic">
+                <p>
+                  “Dear Parents and Students, welcome to the Vidyaniketan family! As an educator with over
+                  15 years of experience, I’ve witnessed the incredible potential that lies within every child.
+                  Our role is not just to teach subjects, but to ignite curiosity, build confidence,
+                  and nurture the whole child.”
+                </p>
+                <p>
+                  “The early years are a child’s most formative. At Vidyaniketan, we strive to make each moment
+                  in school joyful, meaningful, and enriching. Our dedicated teachers ensure that learning is not
+                  just academic — it's emotional, social, and creative.”
+                </p>
+                <p className="not-italic text-right text-navy-blue font-semibold mt-4">
+                  — Mrs. Archana<br />
+                  <span className="text-sm font-normal text-gray-600">Principal, Vidyaniketan School</span>
+                </p>
+              </div>
+            </div>
+
+            {/* Photo Section */}
+            <div className="flex justify-center">
+              <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-deep-blue shadow-lg">
+                <img
+                  src="/images/principal.jpg" // Replace with actual path
+                  alt="Principal - Mrs. Archana"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* Philosophy */}
-      <section className="py-16 bg-gradient-to-br from-light-blue to-deep-blue text-white">
+      <section className="py-16 bg-gradient-to-br from-light-blue to-deep-blue text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Philosophy</h2>
           <p className="text-xl mb-8 max-w-4xl mx-auto leading-relaxed">
-            "We believe in nurturing minds with joy, creativity, and values. Every child is unique, 
+            "We believe in nurturing minds with joy, creativity, and values. Every child is unique,
             and our approach to education honors that uniqueness while building essential skills for success."
           </p>
           <div className="text-lg max-w-3xl mx-auto leading-relaxed">
             <p>
-              Our educational philosophy is rooted in the understanding that children learn best when 
-              they feel safe, valued, and engaged. We combine traditional values with modern teaching 
-              methods to create an environment where academic learning goes hand in hand with character 
+              Our educational philosophy is rooted in the understanding that children learn best when
+              they feel safe, valued, and engaged. We combine traditional values with modern teaching
+              methods to create an environment where academic learning goes hand in hand with character
               development and emotional growth.
             </p>
           </div>
